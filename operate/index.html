@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Bootstrapの読み込み -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <!-- Flat-UIの読み込み -->
+    <!-- <link href="css/flat-ui.css" rel="stylesheet"> -->
+
+<link href="css/main.css" rel="stylesheet">
+<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/Javascript" src="./js/sceneChange.js"></script>
+<title>sas-light</title>
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+            <div id="current" class="col-xs-12">
+                
+                <div class="col-xs-12">
+                    <div id="currentColor" class="panel panel-default">
+                        <div class="panel-heading">現在の色</div>
+                        <div class="panel-body">Null</div>
+                    </div>
+                </div>
+                <h5>↑に更新が反映されない時は何回かボタン押してね</h5>
+                <h5>上手く動かない時は画面を更新してね</h5>
+            </div>
+            <div class="col-xs-12"><h3>色を変更する</h3></div>
+            <div class="col-xs-12">
+            <form onsubmit="return false;" action="save.php" method="post">
+                <button type="submit" class="changeColor btn btn-default" value="#F63969">red</button>
+                <button type="submit" class="changeColor btn btn-default" value="#22A7F0">blue</button>
+                <button type="submit" class="changeColor btn btn-default" value="#03C9A9">green</button>
+                <button type="submit" class="changeColor btn btn-default" value="#F5AB35">orange</button>
+                <button type="submit" class="changeColor btn btn-default" value="#BF55EC">purple</button>
+            </div>
+            <hr/>
+            
+            
+            </form>
+            <div id="msg" class="col-xs-12"></div>
+            </div>
+            <div class="col-xs-12" style="height:50px;"></div>
+    </div>
+    </div>
+    
+</body>
+</html>

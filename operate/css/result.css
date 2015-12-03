@@ -1,0 +1,88 @@
+body {
+	/*height: 1000px;*/
+
+	/*background-image: url(../img/takuro.jpg);*/
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.telop{
+	letter-spacing:-12px;
+	font-size: 80px;
+	left:100%;
+	height: 0px;
+	-moz-animation: telop 4s; /* Firefox */
+	-webkit-animation: telop 4s; /* Safari and Chrome */
+	animation: telop 4s;
+	opacity: 0;
+}
+
+img{
+	/*display: block;*/
+	/*position: absolute;*/
+
+}
+
+.telop_img{
+	/*position: absolute;*/
+
+}
+
+.telop_text{
+	color:#ffffff;
+	position: absolute;
+	top:100px;
+	left:220px;
+}
+
+
+
+
+/* ▼アニメーション名「telop」の動作内容 */
+@-webkit-keyframes telop {
+  0% {
+  	-webkit-transform:translate(-100%, 0px);
+	transform:  translate(-100%, 0px);
+	opacity: 0;
+  }
+  3% {
+  	-webkit-transform:translate(0%, 0px);
+	transform:  translate(0%, 0px);
+	opacity: 1;
+  }
+  80% {
+  	-webkit-transform:translate(0%, 0px);
+	transform:  translate(0%, 0px);
+	opacity: 1;
+  }
+  100% {
+  	-webkit-transform:translate(0%, 0px);
+	transform:  translate(0%, 0px);
+	opacity: 0;
+  }
+}
+
+@keyframes telop {
+  0% {
+  	-webkit-transform:translate(100%, 0px);
+	transform:  translate(100%, 0px);
+	opacity: 1;
+  }
+  20% {
+  	-webkit-transform:translate(0%, 0px);
+	transform:  translate(0%, 0px);
+  }
+  80% {
+  	-webkit-transform:translate(0%, 0px);
+	transform:  translate(0%, 0px);
+	opacity: 1;
+  }
+  100% {
+  	-webkit-transform:translate(-100%, 0px);
+	transform:  translate(-100%, 0px);
+	opacity: 0;
+  }
+}

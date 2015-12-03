@@ -1,0 +1,44 @@
+p {
+	padding-left:20px;
+	padding-right: 20px;
+}
+
+input{
+	margin-top: 10px;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+#msg{
+	position:fixed;
+	width:300px;
+	height: 50px;
+	top:50%;
+	left:50%;
+	margin-left:-150px;
+	margin-top:-25px;
+	z-index: 9999;
+}
+
+input[type="radio"] {
+	font-size:200%;
+	height:30px;
+	width:30px;
+	margin:15px;
+} 
+
+input[type="input"] {
+	height:50px;
+} 
+
+input[type="submit"] {
+	width: 100px;
+	height:50px;
+} 
+.radio_text{
+	vertical-align:middle;
+	font-size: 25px;
+}
+
